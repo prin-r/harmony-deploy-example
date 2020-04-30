@@ -1,6 +1,10 @@
-// pragma solidity >=0.5.14;
-// pragma experimental ABIEncoderV2;
+pragma solidity >=0.5.14;
 
+
+contract Test {
+
+}
+// pragma experimental ABIEncoderV2;
 
 // /// @dev Helper utility library for calculating Merkle proof and managing bytes.
 // library Utils {
@@ -55,7 +59,6 @@
 //         return result;
 //     }
 // }
-
 
 // /// @dev Library for computing Tendermint's block header hash from app hash, time, and height.
 // ///
@@ -129,7 +132,6 @@
 //             ); // [1H]
 //     }
 // }
-
 
 // /**
 //  * @dev Wrappers over Solidity's arithmetic operations with added overflow
@@ -298,7 +300,6 @@
 //     }
 // }
 
-
 // /*
 //  * @dev Provides information about the current execution context, including the
 //  * sender of the transaction and its data. While these are generally available
@@ -325,7 +326,6 @@
 //         return msg.data;
 //     }
 // }
-
 
 // /**
 //  * @dev Contract module which provides a basic access control mechanism, where
@@ -407,7 +407,6 @@
 //     }
 // }
 
-
 // /// @dev Library for computing iAVL Merkle root from (1) data leaf and (2) a list of "MerklePath"
 // /// from such leaf to the root of the tree. Each Merkle path (i.e. proof component) consists of:
 // ///
@@ -456,7 +455,6 @@
 //     }
 // }
 
-
 // /// @dev Library for performing signer recovery for ECDSA secp256k1 signature. Note that the
 // /// library is written specifically for signature signed on Tendermint's precommit data, which
 // /// includes the block hash and some additional information prepended and appended to the block
@@ -494,7 +492,6 @@
 //     }
 // }
 
-
 // interface IBridge {
 //     /// Helper struct to help the function caller to decode oracle data.
 //     struct VerifyOracleDataResult {
@@ -515,7 +512,6 @@
 //         external
 //         returns (VerifyOracleDataResult memory result);
 // }
-
 
 // /// @title Bridge <3 BandChain D3N
 // /// @author Band Protocol Team
