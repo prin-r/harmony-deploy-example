@@ -1,0 +1,25 @@
+{
+  "name": "harmony-deploy-example",
+  "version": "1.0.0",
+  "description": "## Directory Breakdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@harmony-js/core": "^0.1.36",
+    "dotenv": "^8.2.0",
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tansawit/harmony-deploy-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tansawit/harmony-deploy-example/issues"
+  },
+  "homepage": "https://github.com/tansawit/harmony-deploy-example#readme"
+}
