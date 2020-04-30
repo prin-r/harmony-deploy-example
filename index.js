@@ -18,7 +18,7 @@ console.log("alice", alice.bech32Address);
   const tx = hmy.transactions.newTx({
     to: countContractAddress,
     data:
-      "0xd14e62b8000000000000000000000000000000000000000000000000000000000000000a",
+      "0xd14e62b8000000000000000000000000000000000000000000000000000000000000abcd",
     value: "0",
     shardID: 0,
     toShardID: 0,
