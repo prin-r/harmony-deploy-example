@@ -28,6 +28,46 @@ Network: mainnet0 (id: 1)
 
 # Successful contract deploy will show some info here
 Network: testnet (id: 2)
-  Inbox: 0xf97DeD9b8C3a07D6FE799d138752a995e48a98B4
-  Migrations: 0x658aDB885f6D7F120b1d6612962674954046A5a9
+  Bridge: 0x3fF2B9215e191825ea3d5D6B63f7FE4F569D8832
+  Migrations: 0x8cA91d1B5EBc07D8EDdb0670E9d9AE5e8c79ba2b
+  ReceiverMock: 0xccc5D7A1A87191C116c69c5240506268267B63dA
+```
+
+### Test ReceiverMock contract
+
+- Please see the [`index.js`](/index.js) for sending tx relayAndSafe
+
+- Ask chain if the transaction was successful or not
+
+```bash
+curl --location --request POST 'https://api.s0.b.hmny.io' \
+--header 'Content-Type: application/json' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "jsonrpc":"2.0",
+    "method":"hmy_getTransactionReceipt",
+    "params":[
+    "0xdb9e715485432bc84a1d0f8bc4ea001b4b5c4cc4659ab4bace4abe1d59d93d14"],
+    "id":1
+}'
+```
+
+- Ask chain for the value of "latestReq" in the ReceiverMock contract
+
+```bash
+curl --location --request POST 'https://api.s0.b.hmny.io' \
+--header 'Content-Type: application/json' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+    "jsonrpc": "2.0",
+    "method": "hmy_call",
+    "params": [
+        {
+            "to": "0xccc5D7A1A87191C116c69c5240506268267B63dA",
+            "data": "0x8a0d3c31"
+        },
+        "latest"
+    ],
+    "id": 1
+}'
 ```
