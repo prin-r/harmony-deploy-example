@@ -1,12 +1,18 @@
 # Harmony Example Deploy
 
+## Setup
+
+```bash
+yarn install
+```
+
 ## Deployment
 
 #### Compile and Deploy Your Contract
 
 ```bash
-truffle compile
-truffle deploy --network=testnet --reset
+yarn truffle compile
+yarn truffle deploy --network=testnet --reset
 ```
 
 ### Check Contract Deploy
@@ -14,7 +20,7 @@ truffle deploy --network=testnet --reset
 To check that your contract has been successfully deployed, run the following command:
 
 ```bash
-truffle networks
+yarn truffle networks
 ```
 
 If the contract deployment was successful, you should something similar to this
