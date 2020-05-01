@@ -27,10 +27,11 @@ const receiverAddress = "0xccc5D7A1A87191C116c69c5240506268267B63dA";
     gasPrice: "1000000000",
   });
 
-  // Private key
+  // Testnet private key from .env
   hmy.wallet.addByPrivateKey(
     "0x01F903CE0C960FF3A9E68E80FF5FFC344358D80CE1C221C3F9711AF07F83A3BD"
   );
+  // Address that derived from private key
   hmy.wallet.setSigner("0x3aea49553Ce2E478f1c0c5ACC304a84F5F4d1f98");
 
   const signedTX = await hmy.wallet.signTransaction(tx);
