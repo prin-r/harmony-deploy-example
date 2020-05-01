@@ -39,6 +39,14 @@ Network: testnet (id: 2)
   ReceiverMock: 0xccc5D7A1A87191C116c69c5240506268267B63dA
 ```
 
+### RPC end-point
+
+This rpc end-point is used a lot in the code
+
+```
+https://api.s0.b.hmny.io
+```
+
 ### Test ReceiverMock contract
 
 - Please see the [`index.js`](/index.js) for sending tx relayAndSafe
